@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T15:49:02 IST" name="BlazeDemo Suite" finished-at="2026-03-10T15:49:10 IST" duration-ms="8310">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T15:49:02 IST" name="Flight Booking Test" finished-at="2026-03-10T15:49:10 IST" duration-ms="8310">
+      <class name="com.arun.tests.FlightBookingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.arun.tests.FlightBookingTest@cc43f62]" started-at="2026-03-10T15:49:02 IST" name="setup" finished-at="2026-03-10T15:49:06 IST" duration-ms="4421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="bookFlightTest()[pri:0, instance:com.arun.tests.FlightBookingTest@cc43f62]" started-at="2026-03-10T15:49:06 IST" name="bookFlightTest" finished-at="2026-03-10T15:49:10 IST" duration-ms="3496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookFlightTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.arun.tests.FlightBookingTest@cc43f62]" started-at="2026-03-10T15:49:10 IST" name="tearDown" finished-at="2026-03-10T15:49:10 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.arun.tests.FlightBookingTest -->
+    </test> <!-- Flight Booking Test -->
+  </suite> <!-- BlazeDemo Suite -->
+</testng-results>

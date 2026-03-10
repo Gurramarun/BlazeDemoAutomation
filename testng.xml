@@ -1,0 +1,12 @@
+
+<suite name="BlazeDemo Suite">
+
+    <test name="Flight Booking Test">
+
+        <classes>
+            <class name="com.arun.tests.FlightBookingTest"/>
+        </classes>
+
+    </test>
+
+</suite>
