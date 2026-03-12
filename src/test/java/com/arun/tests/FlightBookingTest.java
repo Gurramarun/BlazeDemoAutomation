@@ -111,7 +111,7 @@ public class FlightBookingTest extends BaseTest {
 
         HomePage home = new HomePage(driver);
         home.selectDepartureCity("Boston");
-        home.selectDestinationCity("Paris");  // ✅ FIXED: reverted back to "Paris"
+        home.selectDestinationCity("Cairo");  // ✅ FIXED: Paris is NOT a destination city on BlazeDemo
         home.clickFindFlights();
 
         FlightsPage flights = new FlightsPage(driver);
