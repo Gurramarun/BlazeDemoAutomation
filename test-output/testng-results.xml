@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-12T17:03:22 IST" name="BlazeDemo Suite" finished-at="2026-03-12T17:04:02 IST" duration-ms="39547">
+  <suite started-at="2026-03-12T17:15:47 IST" name="BlazeDemo Suite" finished-at="2026-03-12T17:17:06 IST" duration-ms="79012">
     <groups>
     </groups>
-    <test started-at="2026-03-12T17:03:22 IST" name="Flight Booking Test" finished-at="2026-03-12T17:04:02 IST" duration-ms="39547">
+    <test started-at="2026-03-12T17:15:47 IST" name="Flight Booking Test" finished-at="2026-03-12T17:17:06 IST" duration-ms="79012">
       <class name="com.arun.tests.FlightBookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:23 IST" name="setup" finished-at="2026-03-12T17:03:26 IST" duration-ms="3308" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:15:47 IST" name="setup" finished-at="2026-03-12T17:15:50 IST" duration-ms="3109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:26 IST" name="loadHomePage" finished-at="2026-03-12T17:03:28 IST" duration-ms="1768" status="PASS">
+        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:15:50 IST" name="loadHomePage" finished-at="2026-03-12T17:16:06 IST" duration-ms="16297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadHomePage -->
-        <test-method signature="bookFlightTest()[pri:1, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:28 IST" name="bookFlightTest" finished-at="2026-03-12T17:03:38 IST" duration-ms="10490" status="PASS">
+        <test-method signature="bookFlightTest()[pri:1, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:06 IST" name="bookFlightTest" finished-at="2026-03-12T17:16:21 IST" duration-ms="14391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookFlightTest -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:38 IST" name="captureFailure" finished-at="2026-03-12T17:03:38 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:21 IST" name="captureFailure" finished-at="2026-03-12T17:16:21 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:38 IST" name="loadHomePage" finished-at="2026-03-12T17:03:39 IST" duration-ms="472" status="PASS">
+        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:21 IST" name="loadHomePage" finished-at="2026-03-12T17:16:23 IST" duration-ms="2514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadHomePage -->
-        <test-method signature="verifyFlightsDisplayedTest()[pri:2, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:39 IST" name="verifyFlightsDisplayedTest" finished-at="2026-03-12T17:03:40 IST" duration-ms="1688" status="PASS">
+        <test-method signature="verifyFlightsDisplayedTest()[pri:2, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:23 IST" name="verifyFlightsDisplayedTest" finished-at="2026-03-12T17:16:25 IST" duration-ms="1639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlightsDisplayedTest -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:40 IST" name="captureFailure" finished-at="2026-03-12T17:03:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:25 IST" name="captureFailure" finished-at="2026-03-12T17:16:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,15 +49,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:40 IST" name="loadHomePage" finished-at="2026-03-12T17:03:41 IST" duration-ms="480" status="PASS">
+        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:25 IST" name="loadHomePage" finished-at="2026-03-12T17:16:29 IST" duration-ms="3871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadHomePage -->
-        <test-method signature="chooseFlightTest()[pri:3, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:41 IST" name="chooseFlightTest" finished-at="2026-03-12T17:03:43 IST" duration-ms="2225" status="PASS">
+        <test-method signature="chooseFlightTest()[pri:3, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:29 IST" name="chooseFlightTest" finished-at="2026-03-12T17:16:30 IST" duration-ms="1320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chooseFlightTest -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:43 IST" name="captureFailure" finished-at="2026-03-12T17:03:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:30 IST" name="captureFailure" finished-at="2026-03-12T17:16:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,34 +68,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:43 IST" name="loadHomePage" finished-at="2026-03-12T17:03:43 IST" duration-ms="468" status="PASS">
+        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:30 IST" name="loadHomePage" finished-at="2026-03-12T17:16:37 IST" duration-ms="7021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadHomePage -->
-        <test-method signature="purchaseFlightTest()[pri:4, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:43 IST" name="purchaseFlightTest" finished-at="2026-03-12T17:03:47 IST" duration-ms="3988" status="PASS">
+        <test-method signature="purchaseFlightTest()[pri:4, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:37 IST" name="purchaseFlightTest" finished-at="2026-03-12T17:16:48 IST" duration-ms="10621" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: fromPort (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52192}, goog:processID: 19688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52192/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0fd5dd3c65c0ae05bcf3f5cb100b3e4b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: fromPort (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52192}, goog:processID: 19688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52192/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0fd5dd3c65c0ae05bcf3f5cb100b3e4b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.arun.pages.HomePage.selectDepartureCity(HomePage.java:27)
+at com.arun.tests.FlightBookingTest.purchaseFlightTest(FlightBookingTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseFlightTest -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:47 IST" name="captureFailure" finished-at="2026-03-12T17:03:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:48 IST" name="captureFailure" finished-at="2026-03-12T17:16:48 IST" duration-ms="345" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=purchaseFlightTest status=SUCCESS method=FlightBookingTest.purchaseFlightTest()[pri:4, instance:com.arun.tests.FlightBookingTest@5ddeb7cb] output={null}]]]>
+                <![CDATA[[TestResult name=purchaseFlightTest status=FAILURE method=FlightBookingTest.purchaseFlightTest()[pri:4, instance:com.arun.tests.FlightBookingTest@5ddeb7cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:47 IST" name="loadHomePage" finished-at="2026-03-12T17:03:48 IST" duration-ms="560" status="PASS">
+        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:48 IST" name="loadHomePage" finished-at="2026-03-12T17:16:51 IST" duration-ms="2411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadHomePage -->
-        <test-method signature="verifyBookingIdGeneratedTest()[pri:5, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:48 IST" name="verifyBookingIdGeneratedTest" finished-at="2026-03-12T17:03:57 IST" duration-ms="9430" status="PASS">
+        <test-method signature="verifyBookingIdGeneratedTest()[pri:5, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:16:51 IST" name="verifyBookingIdGeneratedTest" finished-at="2026-03-12T17:17:00 IST" duration-ms="9058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBookingIdGeneratedTest -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:57 IST" name="captureFailure" finished-at="2026-03-12T17:03:57 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:17:00 IST" name="captureFailure" finished-at="2026-03-12T17:17:00 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,15 +157,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:57 IST" name="loadHomePage" finished-at="2026-03-12T17:03:58 IST" duration-ms="594" status="PASS">
+        <test-method is-config="true" signature="loadHomePage()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:17:00 IST" name="loadHomePage" finished-at="2026-03-12T17:17:02 IST" duration-ms="2427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadHomePage -->
-        <test-method signature="verifyConfirmationMessageTest()[pri:6, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:03:58 IST" name="verifyConfirmationMessageTest" finished-at="2026-03-12T17:04:02 IST" duration-ms="3721" status="PASS">
+        <test-method signature="verifyConfirmationMessageTest()[pri:6, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:17:02 IST" name="verifyConfirmationMessageTest" finished-at="2026-03-12T17:17:06 IST" duration-ms="3569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyConfirmationMessageTest -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:04:02 IST" name="captureFailure" finished-at="2026-03-12T17:04:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:17:06 IST" name="captureFailure" finished-at="2026-03-12T17:17:06 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:04:02 IST" name="tearDown" finished-at="2026-03-12T17:04:02 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.arun.tests.FlightBookingTest@5ddeb7cb]" started-at="2026-03-12T17:17:06 IST" name="tearDown" finished-at="2026-03-12T17:17:06 IST" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
