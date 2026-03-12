@@ -7,10 +7,9 @@
         <methods>
           <include name="sameCityFlightTest"/>
           <include name="setup"/>
-          <include name="emptyPassengerNameTest"/>
           <include name="tearDown"/>
-          <include name="verifyBookingIdGeneratedTest"/>
-          <include name="invalidPaymentDetailsTest"/>
+          <include name="captureFailure"/>
+          <include name="loadHomePage"/>
           <include name="invalidDepartureCityTest"/>
         </methods>
       </class> <!-- com.arun.tests.FlightBookingTest -->

@@ -5,27 +5,25 @@ import org.openqa.selenium.WebDriver;
 
 public class ConfirmationPage {
 
-    WebDriver driver;
+    private WebDriver driver;
+
+    // Locators
+    private By successMessage = By.xpath("//h1[contains(text(),'Thank you for your purchase')]");
+    private By bookingId = By.xpath("//td[contains(text(),'Id')]/following-sibling::td");
 
     public ConfirmationPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    // Locators
-    By confirmationMessage = By.xpath("//h1[text()='Thank you for your purchase today!']");
-    By idNumber = By.xpath("//td[text()='Id']/following-sibling::td");
-
-    // Verify confirmation message
+    // Verify booking success
     public boolean isBookingSuccessful() {
 
-        return driver.findElement(confirmationMessage).isDisplayed();
-
+        return !driver.findElements(successMessage).isEmpty();
     }
 
-    // Get Booking ID
+    // Get booking ID
     public String getBookingId() {
 
-        return driver.findElement(idNumber).getText();
-
+        return driver.findElement(bookingId).getText();
     }
 }

@@ -7,7 +7,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     public static WebDriver initDriver() {
 
@@ -20,4 +20,12 @@ public class DriverFactory {
         return driver;
     }
 
+    public static WebDriver getDriver() {
+        return driver;
+    }
+
+	public static void quitDriver() {
+		// TODO Auto-generated method stub
+		
+	}
 }

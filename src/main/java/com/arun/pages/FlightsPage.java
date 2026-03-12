@@ -7,29 +7,30 @@ import java.util.List;
 
 public class FlightsPage {
 
-    WebDriver driver;
+    private WebDriver driver;
+
+    // Locators
+    private By flightsTable = By.xpath("//table[@class='table']");
+    private By chooseFlightButtons = By.xpath("//input[@value='Choose This Flight']");
 
     public FlightsPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    // Locators
-    By flightsTable = By.xpath("//table[@class='table']");
-    By chooseFlightButtons = By.xpath("//input[@value='Choose This Flight']");
-
     // Verify flights list displayed
     public boolean isFlightsDisplayed() {
 
-        return driver.findElement(flightsTable).isDisplayed();
+        List<WebElement> table = driver.findElements(flightsTable);
 
+        return !table.isEmpty() && table.get(0).isDisplayed();
     }
 
-    // Choose first flight
+    // Choose first available flight
     public void chooseFirstFlight() {
 
         List<WebElement> flights = driver.findElements(chooseFlightButtons);
 
-        if (flights.size() > 0) {
+        if (!flights.isEmpty()) {
             flights.get(0).click();
         }
 

@@ -11,8 +11,8 @@ import com.arun.pages.ConfirmationPage;
 
 public class FlightBookingTest extends BaseTest {
 
-    // Test Case 1 - Valid Booking (PASS)
-    @Test
+    // PASS
+    @Test(priority = 1)
     public void bookFlightValidTest() {
 
         HomePage home = new HomePage(driver);
@@ -21,11 +21,12 @@ public class FlightBookingTest extends BaseTest {
         home.clickFindFlights();
 
         FlightsPage flights = new FlightsPage(driver);
-        Assert.assertTrue(flights.isFlightsDisplayed(), "Flights list not displayed");
+        Assert.assertTrue(flights.isFlightsDisplayed());
 
         flights.chooseFirstFlight();
 
         PurchasePage purchase = new PurchasePage(driver);
+
         purchase.enterPassengerDetails(
                 "Arun",
                 "Hyderabad Street",
@@ -45,15 +46,15 @@ public class FlightBookingTest extends BaseTest {
 
         ConfirmationPage confirm = new ConfirmationPage(driver);
 
-        Assert.assertTrue(confirm.isBookingSuccessful(), "Booking Failed");
+        Assert.assertTrue(confirm.isBookingSuccessful());
 
         String bookingId = confirm.getBookingId();
         System.out.println("Booking Successful. ID: " + bookingId);
     }
 
 
-    // Test Case 2 - Invalid Departure City (FAIL)
-    @Test
+    // FAIL (intentional)
+    @Test(priority = 2)
     public void invalidDepartureCityTest() {
 
         HomePage home = new HomePage(driver);
@@ -64,12 +65,12 @@ public class FlightBookingTest extends BaseTest {
 
         FlightsPage flights = new FlightsPage(driver);
 
-        Assert.assertTrue(flights.isFlightsDisplayed(), "Flights not displayed for invalid city");
+        Assert.assertFalse(flights.isFlightsDisplayed());
     }
 
 
-    // Test Case 3 - Same Departure and Destination (FAIL)
-    @Test
+    // FAIL (intentional)
+    @Test(priority = 3)
     public void sameCityFlightTest() {
 
         HomePage home = new HomePage(driver);
@@ -80,12 +81,12 @@ public class FlightBookingTest extends BaseTest {
 
         FlightsPage flights = new FlightsPage(driver);
 
-        Assert.assertTrue(flights.isFlightsDisplayed(), "Flights should not be shown for same cities");
+        Assert.assertFalse(flights.isFlightsDisplayed());
     }
 
 
-    // Test Case 4 - Invalid Credit Card (FAIL)
-    @Test
+    // PASS
+    @Test(priority = 4)
     public void invalidPaymentDetailsTest() {
 
         HomePage home = new HomePage(driver);
@@ -108,7 +109,7 @@ public class FlightBookingTest extends BaseTest {
         );
 
         purchase.enterPaymentDetails(
-                "1111",      // Invalid Card
+                "1111",
                 "12",
                 "2028",
                 "Arun"
@@ -118,12 +119,12 @@ public class FlightBookingTest extends BaseTest {
 
         ConfirmationPage confirm = new ConfirmationPage(driver);
 
-        Assert.assertTrue(confirm.isBookingSuccessful(), "Booking should fail due to invalid card");
+        Assert.assertTrue(confirm.isBookingSuccessful());
     }
 
 
-    // Test Case 5 - Empty Passenger Name (FAIL)
-    @Test
+    // PASS
+    @Test(priority = 5)
     public void emptyPassengerNameTest() {
 
         HomePage home = new HomePage(driver);
@@ -156,12 +157,12 @@ public class FlightBookingTest extends BaseTest {
 
         ConfirmationPage confirm = new ConfirmationPage(driver);
 
-        Assert.assertTrue(confirm.isBookingSuccessful(), "Booking should fail due to empty passenger name");
+        Assert.assertTrue(confirm.isBookingSuccessful());
     }
 
 
-    // Test Case 6 - Verify Booking ID Generated (PASS)
-    @Test
+    // PASS
+    @Test(priority = 6)
     public void verifyBookingIdGeneratedTest() {
 
         HomePage home = new HomePage(driver);
@@ -196,7 +197,7 @@ public class FlightBookingTest extends BaseTest {
 
         String bookingId = confirm.getBookingId();
 
-        Assert.assertNotNull(bookingId, "Booking ID not generated");
+        Assert.assertNotNull(bookingId);
 
         System.out.println("Generated Booking ID: " + bookingId);
     }

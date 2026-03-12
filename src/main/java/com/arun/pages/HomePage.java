@@ -6,16 +6,18 @@ import org.openqa.selenium.support.ui.Select;
 
 public class HomePage {
 
-    WebDriver driver;
-
-    public HomePage(WebDriver driver) {
-        this.driver = driver;
-    }
+    private WebDriver driver;
 
     // Locators
-    By departureCity = By.name("fromPort");
-    By destinationCity = By.name("toPort");
-    By findFlightsBtn = By.xpath("//input[@value='Find Flights']");
+    private By departureCity = By.name("fromPort");
+    private By destinationCity = By.name("toPort");
+    private By findFlightsBtn = By.xpath("//input[@value='Find Flights']");
+
+    public HomePage(WebDriver driver) {
+
+        this.driver = driver;
+
+    }
 
     // Select Departure City
     public void selectDepartureCity(String city) {
