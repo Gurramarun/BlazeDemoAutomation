@@ -163,14 +163,10 @@
                   <a name="verifyConfirmationMessageTest">
                   </a> <!-- verifyConfirmationMessageTest -->
                   <span class="method-name">verifyConfirmationMessageTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Paris
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-	at com.arun.pages.HomePage.selectDestinationCity(HomePage.java:29)
-	at com.arun.tests.FlightBookingTest.verifyConfirmationMessageTest(FlightBookingTest.java:173)
+                  <div class="stack-trace">java.lang.RuntimeException: Could not find dropdown option for: &apos;Paris&apos;
+	at com.arun.pages.HomePage.selectOption(HomePage.java:77)
+	at com.arun.pages.HomePage.selectDestinationCity(HomePage.java:37)
+	at com.arun.tests.FlightBookingTest.verifyConfirmationMessageTest(FlightBookingTest.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -275,34 +271,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bookFlightTest')
+data.setCell(0, 1, 'verifyBookingIdGeneratedTest')
 data.setCell(0, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(0, 3, 3882);
+data.setCell(0, 3, 9557);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'purchaseFlightTest')
+data.setCell(1, 1, 'bookFlightTest')
 data.setCell(1, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(1, 3, 3577);
+data.setCell(1, 3, 9526);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyBookingIdGeneratedTest')
+data.setCell(2, 1, 'purchaseFlightTest')
 data.setCell(2, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(2, 3, 3506);
+data.setCell(2, 3, 4761);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'chooseFlightTest')
 data.setCell(3, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(3, 3, 1401);
+data.setCell(3, 3, 1797);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyFlightsDisplayedTest')
 data.setCell(4, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(4, 3, 853);
+data.setCell(4, 3, 1584);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyConfirmationMessageTest')
 data.setCell(5, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(5, 3, 193);
+data.setCell(5, 3, 933);
 window.suiteTableData['BlazeDemo_Suite']= { tableData: data, tableDiv: 'times-div-BlazeDemo_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-BlazeDemo_Suite">
               </div> <!-- times-div-BlazeDemo_Suite -->
             </div> <!-- times-div -->
@@ -335,81 +331,81 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">3571 ms</span>
+                <span class="method-start">3497 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bookFlightTest</span>
-                <span class="method-start">4916 ms</span>
+                <span class="method-start">4929 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureFailure([TestResult name=bookFlightTest status=SUCCESS method=FlightBookingTest.bookFlightTest()[pri:1, inst...)</span>
-                <span class="method-start">8806 ms</span>
+                <span class="method-start">14459 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">8811 ms</span>
+                <span class="method-start">14466 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyFlightsDisplayedTest</span>
-                <span class="method-start">9212 ms</span>
+                <span class="method-start">14924 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureFailure([TestResult name=verifyFlightsDisplayedTest status=SUCCESS method=FlightBookingTest.verifyFlightsDis...)</span>
-                <span class="method-start">10066 ms</span>
+                <span class="method-start">16511 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">10069 ms</span>
+                <span class="method-start">16513 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">chooseFlightTest</span>
-                <span class="method-start">10530 ms</span>
+                <span class="method-start">16968 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureFailure([TestResult name=chooseFlightTest status=SUCCESS method=FlightBookingTest.chooseFlightTest()[pri:3, ...)</span>
-                <span class="method-start">11937 ms</span>
+                <span class="method-start">18770 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">11939 ms</span>
+                <span class="method-start">18773 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">purchaseFlightTest</span>
-                <span class="method-start">12366 ms</span>
+                <span class="method-start">19209 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureFailure([TestResult name=purchaseFlightTest status=SUCCESS method=FlightBookingTest.purchaseFlightTest()[pri...)</span>
-                <span class="method-start">15944 ms</span>
+                <span class="method-start">23972 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">15946 ms</span>
+                <span class="method-start">23973 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBookingIdGeneratedTest</span>
-                <span class="method-start">16361 ms</span>
+                <span class="method-start">24435 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureFailure([TestResult name=verifyBookingIdGeneratedTest status=SUCCESS method=FlightBookingTest.verifyBookingI...)</span>
-                <span class="method-start">19870 ms</span>
+                <span class="method-start">33994 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">19872 ms</span>
+                <span class="method-start">33997 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyConfirmationMessageTest</span>
-                <span class="method-start">20396 ms</span>
+                <span class="method-start">34455 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureFailure([TestResult name=verifyConfirmationMessageTest status=FAILURE method=FlightBookingTest.verifyConfirm...)</span>
-                <span class="method-start">20593 ms</span>
+                <span class="method-start">35392 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20747 ms</span>
+                <span class="method-start">35575 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

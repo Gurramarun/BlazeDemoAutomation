@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 12 15:34:39 IST 2026</td>
+<td>Started on:</td><td>Thu Mar 12 16:57:44 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20827 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36069 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,24 +77,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.arun.tests.FlightBookingTest.verifyConfirmationMessageTest()'><b>verifyConfirmationMessageTest</b><br>Test class: com.arun.tests.FlightBookingTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Paris
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-	at com.arun.pages.HomePage.selectDestinationCity(HomePage.java:29)
-	at com.arun.tests.FlightBookingTest.verifyConfirmationMessageTest(FlightBookingTest.java:173)
+<td><div><pre>java.lang.RuntimeException: Could not find dropdown option for: &apos;Paris&apos;
+	at com.arun.pages.HomePage.selectOption(HomePage.java:77)
+	at com.arun.pages.HomePage.selectDestinationCity(HomePage.java:37)
+	at com.arun.tests.FlightBookingTest.verifyConfirmationMessageTest(FlightBookingTest.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332150216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1332150216'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Paris
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-	at com.arun.pages.HomePage.selectDestinationCity(HomePage.java:29)
-	at com.arun.tests.FlightBookingTest.verifyConfirmationMessageTest(FlightBookingTest.java:173)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1394526584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1394526584'><pre>java.lang.RuntimeException: Could not find dropdown option for: &apos;Paris&apos;
+	at com.arun.pages.HomePage.selectOption(HomePage.java:77)
+	at com.arun.pages.HomePage.selectDestinationCity(HomePage.java:37)
+	at com.arun.tests.FlightBookingTest.verifyConfirmationMessageTest(FlightBookingTest.java:114)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,7 +117,7 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.arun.tests.FlightBookingTest@16eb3ea3</td></tr>
+<td>com.arun.tests.FlightBookingTest@5ddeb7cb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -136,30 +128,30 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.arun.tests.FlightBookingTest.verifyBookingIdGeneratedTest()'><b>verifyBookingIdGeneratedTest</b><br>Test class: com.arun.tests.FlightBookingTest</td>
+<td></td>
+<td>9</td>
+<td>com.arun.tests.FlightBookingTest@5ddeb7cb</td></tr>
+<tr>
 <td title='com.arun.tests.FlightBookingTest.bookFlightTest()'><b>bookFlightTest</b><br>Test class: com.arun.tests.FlightBookingTest</td>
 <td></td>
-<td>3</td>
-<td>com.arun.tests.FlightBookingTest@16eb3ea3</td></tr>
+<td>9</td>
+<td>com.arun.tests.FlightBookingTest@5ddeb7cb</td></tr>
 <tr>
 <td title='com.arun.tests.FlightBookingTest.purchaseFlightTest()'><b>purchaseFlightTest</b><br>Test class: com.arun.tests.FlightBookingTest</td>
 <td></td>
-<td>3</td>
-<td>com.arun.tests.FlightBookingTest@16eb3ea3</td></tr>
+<td>4</td>
+<td>com.arun.tests.FlightBookingTest@5ddeb7cb</td></tr>
 <tr>
 <td title='com.arun.tests.FlightBookingTest.chooseFlightTest()'><b>chooseFlightTest</b><br>Test class: com.arun.tests.FlightBookingTest</td>
 <td></td>
 <td>1</td>
-<td>com.arun.tests.FlightBookingTest@16eb3ea3</td></tr>
+<td>com.arun.tests.FlightBookingTest@5ddeb7cb</td></tr>
 <tr>
 <td title='com.arun.tests.FlightBookingTest.verifyFlightsDisplayedTest()'><b>verifyFlightsDisplayedTest</b><br>Test class: com.arun.tests.FlightBookingTest</td>
 <td></td>
-<td>0</td>
-<td>com.arun.tests.FlightBookingTest@16eb3ea3</td></tr>
-<tr>
-<td title='com.arun.tests.FlightBookingTest.verifyBookingIdGeneratedTest()'><b>verifyBookingIdGeneratedTest</b><br>Test class: com.arun.tests.FlightBookingTest</td>
-<td></td>
-<td>3</td>
-<td>com.arun.tests.FlightBookingTest@16eb3ea3</td></tr>
+<td>1</td>
+<td>com.arun.tests.FlightBookingTest@5ddeb7cb</td></tr>
 </table><p>
 </body>
 </html>
