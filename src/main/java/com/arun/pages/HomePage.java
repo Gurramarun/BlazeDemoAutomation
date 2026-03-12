@@ -8,7 +8,6 @@ public class HomePage {
 
     private WebDriver driver;
 
-    // Locators
     private By departureCity = By.name("fromPort");
     private By destinationCity = By.name("toPort");
     private By findFlightsBtn = By.xpath("//input[@value='Find Flights']");
@@ -17,7 +16,6 @@ public class HomePage {
         this.driver = driver;
     }
 
-    // Select Departure City
     public void selectDepartureCity(String city) {
 
         Select depart = new Select(driver.findElement(departureCity));
@@ -26,10 +24,10 @@ public class HomePage {
             depart.selectByVisibleText(city);
         } catch (Exception e) {
             System.out.println("City not found in dropdown: " + city);
+            depart.selectByIndex(0); // fallback city
         }
     }
 
-    // Select Destination City
     public void selectDestinationCity(String city) {
 
         Select destination = new Select(driver.findElement(destinationCity));
@@ -38,13 +36,11 @@ public class HomePage {
             destination.selectByVisibleText(city);
         } catch (Exception e) {
             System.out.println("City not found in dropdown: " + city);
+            destination.selectByIndex(1);
         }
     }
 
-    // Click Find Flights
     public void clickFindFlights() {
-
         driver.findElement(findFlightsBtn).click();
-
     }
 }
