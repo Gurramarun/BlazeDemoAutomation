@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,22 +103,7 @@
                     <div class="method-list-content failed suite-BlazeDemo_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="emptyPassengerNameTest">emptyPassengerNameTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="invalidDepartureCityTest">invalidDepartureCityTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="invalidPaymentDetailsTest">invalidPaymentDetailsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="sameCityFlightTest">sameCityFlightTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="verifyConfirmationMessageTest">verifyConfirmationMessageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-BlazeDemo_Suite -->
@@ -132,12 +117,27 @@
                     <div class="method-list-content passed suite-BlazeDemo_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="bookFlightValidTest">bookFlightValidTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="bookFlightTest">bookFlightTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="chooseFlightTest">chooseFlightTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="purchaseFlightTest">purchaseFlightTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="verifyBookingIdGeneratedTest">verifyBookingIdGeneratedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.arun.tests.FlightBookingTest" class="method navigator-link" hash-for-method="verifyFlightsDisplayedTest">verifyFlightsDisplayedTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BlazeDemo_Suite -->
@@ -160,49 +160,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="emptyPassengerNameTest">
-                  </a> <!-- emptyPassengerNameTest -->
-                  <span class="method-name">emptyPassengerNameTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.arun.tests.FlightBookingTest.emptyPassengerNameTest(FlightBookingTest.java:160)
+                  <a name="verifyConfirmationMessageTest">
+                  </a> <!-- verifyConfirmationMessageTest -->
+                  <span class="method-name">verifyConfirmationMessageTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Paris
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at com.arun.pages.HomePage.selectDestinationCity(HomePage.java:29)
+	at com.arun.tests.FlightBookingTest.verifyConfirmationMessageTest(FlightBookingTest.java:173)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidDepartureCityTest">
-                  </a> <!-- invalidDepartureCityTest -->
-                  <span class="method-name">invalidDepartureCityTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.arun.tests.FlightBookingTest.invalidDepartureCityTest(FlightBookingTest.java:68)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidPaymentDetailsTest">
-                  </a> <!-- invalidPaymentDetailsTest -->
-                  <span class="method-name">invalidPaymentDetailsTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.arun.tests.FlightBookingTest.invalidPaymentDetailsTest(FlightBookingTest.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sameCityFlightTest">
-                  </a> <!-- sameCityFlightTest -->
-                  <span class="method-name">sameCityFlightTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.arun.tests.FlightBookingTest.sameCityFlightTest(FlightBookingTest.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -216,9 +186,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bookFlightValidTest">
-                  </a> <!-- bookFlightValidTest -->
-                  <span class="method-name">bookFlightValidTest</span>
+                  <a name="bookFlightTest">
+                  </a> <!-- bookFlightTest -->
+                  <span class="method-name">bookFlightTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chooseFlightTest">
+                  </a> <!-- chooseFlightTest -->
+                  <span class="method-name">chooseFlightTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseFlightTest">
+                  </a> <!-- purchaseFlightTest -->
+                  <span class="method-name">purchaseFlightTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -226,6 +210,13 @@
                   <a name="verifyBookingIdGeneratedTest">
                   </a> <!-- verifyBookingIdGeneratedTest -->
                   <span class="method-name">verifyBookingIdGeneratedTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFlightsDisplayedTest">
+                  </a> <!-- verifyFlightsDisplayedTest -->
+                  <span class="method-name">verifyFlightsDisplayedTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -284,34 +275,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bookFlightValidTest')
+data.setCell(0, 1, 'bookFlightTest')
 data.setCell(0, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(0, 3, 4052);
+data.setCell(0, 3, 3659);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'emptyPassengerNameTest')
+data.setCell(1, 1, 'purchaseFlightTest')
 data.setCell(1, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(1, 3, 3660);
+data.setCell(1, 3, 3412);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidPaymentDetailsTest')
+data.setCell(2, 1, 'verifyBookingIdGeneratedTest')
 data.setCell(2, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(2, 3, 3600);
+data.setCell(2, 3, 3221);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyBookingIdGeneratedTest')
+data.setCell(3, 1, 'chooseFlightTest')
 data.setCell(3, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(3, 3, 3583);
+data.setCell(3, 3, 1650);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'sameCityFlightTest')
+data.setCell(4, 1, 'verifyFlightsDisplayedTest')
 data.setCell(4, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(4, 3, 902);
+data.setCell(4, 3, 843);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'invalidDepartureCityTest')
+data.setCell(5, 1, 'verifyConfirmationMessageTest')
 data.setCell(5, 2, 'com.arun.tests.FlightBookingTest')
-data.setCell(5, 3, 869);
+data.setCell(5, 3, 191);
 window.suiteTableData['BlazeDemo_Suite']= { tableData: data, tableDiv: 'times-div-BlazeDemo_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-BlazeDemo_Suite">
               </div> <!-- times-div-BlazeDemo_Suite -->
             </div> <!-- times-div -->
@@ -344,87 +335,81 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">3946 ms</span>
+                <span class="method-start">3435 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">bookFlightValidTest</span>
-                <span class="method-start">5311 ms</span>
+                <span class="method-name">bookFlightTest</span>
+                <span class="method-start">4766 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=bookFlightValidTest status=SUCCESS method=FlightBookingTest.bookFlightValidTest()[p...)</span>
-                <span class="method-start">9371 ms</span>
+                <span class="method-name">captureFailure([TestResult name=bookFlightTest status=SUCCESS method=FlightBookingTest.bookFlightTest()[pri:1, inst...)</span>
+                <span class="method-start">8434 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">9377 ms</span>
+                <span class="method-start">8440 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">invalidDepartureCityTest</span>
-                <span class="method-start">9776 ms</span>
+                <span class="method-name">verifyFlightsDisplayedTest</span>
+                <span class="method-start">8856 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=invalidDepartureCityTest status=FAILURE method=FlightBookingTest.invalidDepartureCi...)</span>
-                <span class="method-start">10649 ms</span>
+                <span class="method-name">captureFailure([TestResult name=verifyFlightsDisplayedTest status=SUCCESS method=FlightBookingTest.verifyFlightsDis...)</span>
+                <span class="method-start">9701 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">10776 ms</span>
+                <span class="method-start">9703 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">sameCityFlightTest</span>
-                <span class="method-start">11213 ms</span>
+                <span class="method-name">chooseFlightTest</span>
+                <span class="method-start">10139 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=sameCityFlightTest status=FAILURE method=FlightBookingTest.sameCityFlightTest()[pri...)</span>
-                <span class="method-start">12121 ms</span>
+                <span class="method-name">captureFailure([TestResult name=chooseFlightTest status=SUCCESS method=FlightBookingTest.chooseFlightTest()[pri:3, ...)</span>
+                <span class="method-start">11791 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">12231 ms</span>
+                <span class="method-start">11792 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">invalidPaymentDetailsTest</span>
-                <span class="method-start">12708 ms</span>
+                <span class="method-name">purchaseFlightTest</span>
+                <span class="method-start">12316 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=invalidPaymentDetailsTest status=FAILURE method=FlightBookingTest.invalidPaymentDet...)</span>
-                <span class="method-start">16311 ms</span>
+                <span class="method-name">captureFailure([TestResult name=purchaseFlightTest status=SUCCESS method=FlightBookingTest.purchaseFlightTest()[pri...)</span>
+                <span class="method-start">15735 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loadHomePage</span>
-                <span class="method-start">16449 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">emptyPassengerNameTest</span>
-                <span class="method-start">16864 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=emptyPassengerNameTest status=FAILURE method=FlightBookingTest.emptyPassengerNameTe...)</span>
-                <span class="method-start">20528 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loadHomePage</span>
-                <span class="method-start">20656 ms</span>
+                <span class="method-start">15739 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBookingIdGeneratedTest</span>
-                <span class="method-start">21131 ms</span>
+                <span class="method-start">16197 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureFailure([TestResult name=verifyBookingIdGeneratedTest status=SUCCESS method=FlightBookingTest.verifyBookingI...)</span>
-                <span class="method-start">24720 ms</span>
+                <span class="method-start">19419 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loadHomePage</span>
+                <span class="method-start">19421 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyConfirmationMessageTest</span>
+                <span class="method-start">19854 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=verifyConfirmationMessageTest status=FAILURE method=FlightBookingTest.verifyConfirm...)</span>
+                <span class="method-start">20051 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24720 ms</span>
+                <span class="method-start">20191 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

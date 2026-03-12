@@ -19,28 +19,20 @@ public class HomePage {
     public void selectDepartureCity(String city) {
 
         Select depart = new Select(driver.findElement(departureCity));
+        depart.selectByVisibleText(city);
 
-        try {
-            depart.selectByVisibleText(city);
-        } catch (Exception e) {
-            System.out.println("City not found in dropdown: " + city);
-            depart.selectByIndex(0); // fallback city
-        }
     }
 
     public void selectDestinationCity(String city) {
 
         Select destination = new Select(driver.findElement(destinationCity));
+        destination.selectByVisibleText(city);
 
-        try {
-            destination.selectByVisibleText(city);
-        } catch (Exception e) {
-            System.out.println("City not found in dropdown: " + city);
-            destination.selectByIndex(1);
-        }
     }
 
     public void clickFindFlights() {
+
         driver.findElement(findFlightsBtn).click();
+
     }
 }

@@ -5,14 +5,11 @@
     <classes>
       <class name="com.arun.tests.FlightBookingTest">
         <methods>
-          <include name="sameCityFlightTest"/>
+          <include name="verifyConfirmationMessageTest"/>
           <include name="setup"/>
-          <include name="emptyPassengerNameTest"/>
           <include name="tearDown"/>
           <include name="captureFailure"/>
           <include name="loadHomePage"/>
-          <include name="invalidPaymentDetailsTest"/>
-          <include name="invalidDepartureCityTest"/>
         </methods>
       </class> <!-- com.arun.tests.FlightBookingTest -->
     </classes>

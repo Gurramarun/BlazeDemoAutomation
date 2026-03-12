@@ -5,30 +5,26 @@ import org.openqa.selenium.WebDriver;
 
 public class PurchasePage {
 
-    private WebDriver driver;
-
-    // Locators
-    private By name = By.id("inputName");
-    private By address = By.id("address");
-    private By city = By.id("city");
-    private By state = By.id("state");
-    private By zipCode = By.id("zipCode");
-
-    @SuppressWarnings("unused")
-	private By cardType = By.id("cardType");
-    private By creditCardNumber = By.id("creditCardNumber");
-    private By creditCardMonth = By.id("creditCardMonth");
-    private By creditCardYear = By.id("creditCardYear");
-
-    private By nameOnCard = By.id("nameOnCard");
-
-    private By purchaseFlightBtn = By.xpath("//input[@value='Purchase Flight']");
+    WebDriver driver;
 
     public PurchasePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    // Enter Passenger Details
+    By name = By.id("inputName");
+    By address = By.id("address");
+    By city = By.id("city");
+    By state = By.id("state");
+    By zipCode = By.id("zipCode");
+
+    By creditCardNumber = By.id("creditCardNumber");
+    By creditCardMonth = By.id("creditCardMonth");
+    By creditCardYear = By.id("creditCardYear");
+
+    By nameOnCard = By.id("nameOnCard");
+
+    By purchaseFlightBtn = By.xpath("//input[@value='Purchase Flight']");
+
     public void enterPassengerDetails(String passengerName, String addr, String cityName, String stateName, String zip) {
 
         driver.findElement(name).sendKeys(passengerName);
@@ -39,7 +35,6 @@ public class PurchasePage {
 
     }
 
-    // Enter Payment Details
     public void enterPaymentDetails(String cardNum, String month, String year, String cardHolderName) {
 
         driver.findElement(creditCardNumber).sendKeys(cardNum);
@@ -54,7 +49,6 @@ public class PurchasePage {
 
     }
 
-    // Click Purchase Flight
     public void clickPurchaseFlight() {
 
         driver.findElement(purchaseFlightBtn).click();
